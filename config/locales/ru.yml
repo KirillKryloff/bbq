@@ -8,11 +8,11 @@ ru:
 
     # Перевод атрибутов моделей
   attributes:
-  user:
-    email: 'Email'
-    name: 'Имя'
-    password: 'Пароль'
-    password_confirmation: 'Подтверждение пароля'
+    user:
+      email: 'Email'
+      name: 'Имя'
+      password: 'Пароль'
+      password_confirmation: 'Подтверждение пароля'
     event:
       title: 'Название'
       address: 'Место проведения'
@@ -26,6 +26,22 @@ ru:
       destroyed: 'Вы удалили мероприятие :('
     users:
       updated: 'Вы обновили свой профиль'
+    comments:
+      destroyed: 'Комментарий удален'
+      created: 'Ваш комментарий добавлен'
+      error: 'Ошибка с комментарием'
+    subscriptions:
+      created: 'Вы подписаны на это событие'
+      destroyed: 'Участник отписан'
+      error: 'Подписка/отписка не сработала'
+
   app:
     name: 'Шашлыки'
     company: 'Хороший программист'
+
+  comments:
+    comment:
+      destroy_confirm: 'Вы уверены, что хотите удалить этот комментарий?'
+  subscriptions:
+    subscription:
+      destroy_confirm: 'Вы уверены, что хотите удалить эту подписку?'
