@@ -20,6 +20,10 @@ ru:
       description: 'Описание'
 
   controllers:
+    subscriptions:
+      created: 'Вы подписаны на это событие'
+      destroyed: 'Участник отписан'
+      error: 'Подписка/отписка не сработала'
     events:
       created: 'Вы создали новое мероприятие'
       updated: 'Вы обновили мероприятие'
@@ -30,10 +34,6 @@ ru:
       destroyed: 'Комментарий удален'
       created: 'Ваш комментарий добавлен'
       error: 'Ошибка с комментарием'
-    subscriptions:
-      created: 'Вы подписаны на это событие'
-      destroyed: 'Участник отписан'
-      error: 'Подписка/отписка не сработала'
 
   app:
     name: 'Шашлыки'
@@ -42,6 +42,12 @@ ru:
   comments:
     comment:
       destroy_confirm: 'Вы уверены, что хотите удалить этот комментарий?'
+  
   subscriptions:
     subscription:
-      destroy_confirm: 'Вы уверены, что хотите удалить эту подписку?'
+      destroy_confirmation: 'Вы уверены, что хотите удалить эту подписку?'
+
+  errors:
+    organizer_error: 'Нельзя подписаться на свое событие'
+    unique_email: 'Пользователь с таким email существует'
+    subscriptions_error: 'Подписка/отписка не сработала'
