@@ -44,6 +44,7 @@ class Subscription < ApplicationRecord
   end
 
   def unique_email
-    errors.add(:user_email, I18n.t('errors.unique_email')) if User.all.map(&:email).include?(user_email)
+    # errors.add(:user_email, I18n.t('errors.unique_email')) if User.all.map(&:email).include?(user_email)
+    errors.add(:user_email, I18n.t('errors.unique_email')) if User.exists?(email: user_email)
   end
 end
