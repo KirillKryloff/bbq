@@ -46,8 +46,8 @@ class SubscriptionsController < ApplicationController
     params.fetch(:subscription, {}).permit(:user_email, :user_name)
   end
 
-  def set_subscriptionsss
-    @subscription = @event.subscriptions.find(params[:user_name])
+  def re_subscribe?
+    @new_subscription = Subscription.exists?(user_name: @user)
   end
 
 end
