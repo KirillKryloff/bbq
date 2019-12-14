@@ -13,7 +13,7 @@
         </div>
     <% end %>
 
-    <% unless @event.exists?(subscribers: current_user) %>
+    <% unless @event.subscriptions.exists?(user: current_user) %>
       <div class="actions">
         <%= f.submit 'Подписаться', class: 'btn btn-primary' %>
       </div>
