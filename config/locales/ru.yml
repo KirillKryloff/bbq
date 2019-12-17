@@ -5,36 +5,43 @@ ru:
     models:
       user: 'Пользователь'
       event: 'Событие'
-
+      photo: 'Фотография'
     # Перевод атрибутов моделей
-  attributes:
-    user:
-      email: 'Email'
-      name: 'Имя'
-      password: 'Пароль'
-      password_confirmation: 'Подтверждение пароля'
-    event:
-      title: 'Название'
-      address: 'Место проведения'
-      datetime: 'Дата и время'
-      description: 'Описание'
-
+    attributes:
+      user:
+        email: 'Email'
+        name: 'Имя'
+        avatar: 'Аватарка'
+        password: 'Пароль'
+        password_confirmation: 'Подтверждение пароля'
+      event:
+        title: 'Название'
+        address: 'Место проведения'
+        datetime: 'Дата и время'
+        description: 'Описание'
+      photo:
+        photo: 'Фотография'
+  
   controllers:
     subscriptions:
       created: 'Вы подписаны на это событие'
       destroyed: 'Участник отписан'
       error: 'Подписка/отписка не сработала'
     events:
-      created: 'Вы создали новое мероприятие'
-      updated: 'Вы обновили мероприятие'
-      destroyed: 'Вы удалили мероприятие :('
+     created: 'Вы создали новое мероприятие'
+     updated: 'Вы обновили мероприятие'
+     destroyed: 'Вы удалили мероприятие :('
     users:
       updated: 'Вы обновили свой профиль'
     comments:
       destroyed: 'Комментарий удален'
       created: 'Ваш комментарий добавлен'
       error: 'Ошибка с комментарием'
-
+    photos:
+      error: 'Что-то не так с фоткой'
+      created: 'Вы добавили фотографию к событию'
+      destroyed: 'Вы удалили фотку'
+  
   app:
     name: 'Шашлыки'
     company: 'Хороший программист'
@@ -42,7 +49,7 @@ ru:
   comments:
     comment:
       destroy_confirm: 'Вы уверены, что хотите удалить этот комментарий?'
-  
+    
   subscriptions:
     subscription:
       destroy_confirmation: 'Вы уверены, что хотите удалить эту подписку?'
