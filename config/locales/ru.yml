@@ -58,3 +58,19 @@ ru:
     organizer_error: 'Нельзя подписаться на свое событие'
     unique_email: 'Пользователь с таким email существует'
     subscriptions_error: 'Подписка/отписка не сработала'
+
+  event_mailer:
+    comment:
+      title: 'Новый комментарий'
+      author: 'Автор'
+      event: 'Событие'
+      datetime: 'Состоится'
+      owner: 'Организатор'
+    subscription:
+      title: 'Новая подписка'
+      name: 'Имя'
+      email: 'Email'
+      author: 'Автор'
+      event: 'Событие'
+      datetime: 'Состоится'
+      owner: 'Организатор'
