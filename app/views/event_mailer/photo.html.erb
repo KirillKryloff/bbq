@@ -1,13 +1,13 @@
 <h1><%= t '.title' %></h1>
 <%= image_tag(@photo.photo.url) %>
 <%= image_url(@photo.photo.url) %>
-<p><%= t '.name' %>: <strong><%= @photo.user.name %></strong></p>
+<p><%= t '.author' %>: <strong><%= @photo.user.name %></strong></p>
 
 <p><%= t '.email' %>: <strong><%= link_to @email, "mailto:#{@photo.user.email}" %></strong></p>
 <hr/>
 
 <%= t '.event' %>
-<h3><%= @event.title %></h3>
+<h3><%= link_to @event.title, event_url(@event) %></h3>
 <hr/>
 
 <%= t '.datetime' %>
